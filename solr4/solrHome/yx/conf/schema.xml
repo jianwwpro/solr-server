@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema name="example" version="1.5">
+<fields>
+   <field name="_version_" type="long" indexed="true" stored="true" /> 
+   <field name="_root_" type="string" indexed="true" stored="true"/> 
+   <field name="all" type="text_general" indexed="true" stored="true" multiValued="true"/> 
+   <field name="createdDt" type="long" indexed="true" stored="true"/> 
+   <field name="updatedDt" type="long" indexed="true" stored="true"/> 
+   <field name="createdBy" type="string" indexed="true" stored="true"/> 
+   <field name="updatedBy" type="string" indexed="true" stored="true"/> 
+   <field name="sid" type="string" indexed="true" stored="true"  required="true" /> 
+    
+	<field name="resTitle" type="text_general" indexed="true" stored="true"  required="false" default="" /> 	  
+	<field name="shootingTime" type="string" indexed="true" stored="true"  required="false" default=""/>	
+	<field name="activityClass" type="string" indexed="true" stored="true"  required="false" default=""/>
+	<field name="thumbPath" type="string" indexed="true" stored="true" default=""/> 		   
+	<field name="resCode" type="text_word" indexed="true" stored="true" multiValued="false"/> 
+	<field name="isrc" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="origCode" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="name" type="text_general" indexed="true" stored="true"  required="false" default="" /> 
+	<field name="sameName" type="text_general" indexed="true" stored="true" multiValued="false"/> 
+	<field name="reName" type="text_general" indexed="true" stored="true" multiValued="false"/> 
+	<field name="otherName" type="text_general" indexed="true" stored="true" multiValued="false"/> 
+	<field name="seriesName" type="text_general" indexed="true" stored="true" multiValued="false"/> 
+	<field name="gradeCoubnt" type="int" indexed="true" stored="true" multiValued="false"/> 
+	<field name="gradeNum" type="int" indexed="true" stored="true" multiValued="false"/> 
+	<field name="createdName" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="responsible" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="version" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="publisher" type="text_general" indexed="true" stored="true" multiValued="false"/> 
+	<field name="publishAddress" type="text_general" indexed="true" stored="true" multiValued="false"/> 
+	<field name="createlong" type="long" indexed="true" stored="true" multiValued="false"/> 
+	<field name="releaselong" type="long" indexed="true" stored="true" multiValued="false"/> 
+	<field name="publishlong" type="long" indexed="true" stored="true" multiValued="false"/> 
+	<field name="area" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="dirNum" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="reward" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="annotate" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyNum" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyTime" type="int" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyModel" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keySoundType" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyColour" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyWH" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keySoundModel" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyAudioCode" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyAudioData" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyAudioSample" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyAudioBit" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyVideoCode" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyVideoSample" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyVideoData" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyMakeEquip" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyResolution" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyLoad" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="obtainType" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyword" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyType" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="type" type="string" indexed="true" stored="true"  required="false" default=""/>
+	<field name="originateOrg" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="lang" type="text_word" indexed="true" stored="true" multiValued="false"/> 
+	<field name="collectionOrg" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="collectionArea" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="demandNum" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="level" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="content" type="text_general" indexed="true" stored="true" multiValued="false"/> 
+	<field name="resType" type="string" indexed="true" stored="true"  required="false" default=""/> 
+	<field name="busSid" type="string" indexed="true" stored="true"  multiValued="false" default=""/> 
+	<field name="status" type="int" indexed="true" stored="true" multiValued="false"/> 
+	<field name="subType" type="string" indexed="true" stored="true"  required="false" default=""/> 
+	<field name="summary" type="text_general" indexed="true" stored="true" multiValued="false"/> 
+	<field name="chubanze" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="chubandi" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="isCover" type="int" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyPicModel" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="keyPixel" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="thumb" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="displayName" type="text_general" indexed="true" stored="true" multiValued="false"/> 
+	<field name="size" type="int" indexed="true" stored="true" multiValued="false"/> 
+	<field name="pix" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="descr" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="extName" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="leibie" type="text_word" indexed="true" stored="true" multiValued="false"/> 
+	<field name="texts" type="string" indexed="true" stored="true" multiValued="false"/> 
+	<field name="pfType" type="text_word" indexed="true" stored="true"  multiValued="false" default=""/> 
+	<field name="createDate" type="long" indexed="true" stored="true"/> 
+    
+</fields>
+
+	<copyField source="resCode" dest="all"/>
+	<copyField source="isrc" dest="all"/>
+	<copyField source="origCode" dest="all"/>
+	<copyField source="name" dest="all"/>
+	<copyField source="sameName" dest="all"/>
+	<copyField source="reName" dest="all"/>
+	<copyField source="otherName" dest="all"/>
+	<copyField source="seriesName" dest="all"/>
+	<copyField source="gradeCoubnt" dest="all"/>
+	<copyField source="gradeNum" dest="all"/>
+	<copyField source="createdName" dest="all"/>
+	<copyField source="responsible" dest="all"/>
+	<copyField source="version" dest="all"/>
+	<copyField source="publisher" dest="all"/>
+	<copyField source="publishAddress" dest="all"/>
+	<copyField source="area" dest="all"/>
+	<copyField source="dirNum" dest="all"/>
+	<copyField source="reward" dest="all"/>
+	<copyField source="annotate" dest="all"/>
+	<copyField source="keyNum" dest="all"/>
+	<copyField source="keyTime" dest="all"/>
+	<copyField source="keyModel" dest="all"/>
+	<copyField source="keySoundType" dest="all"/>
+	<copyField source="keyColour" dest="all"/>
+	<copyField source="keyWH" dest="all"/>
+	<copyField source="keySoundModel" dest="all"/>
+	<copyField source="keyAudioCode" dest="all"/>
+	<copyField source="keyAudioData" dest="all"/>
+	<copyField source="keyAudioSample" dest="all"/>
+	<copyField source="keyAudioBit" dest="all"/>
+	<copyField source="keyVideoCode" dest="all"/>
+	<copyField source="keyVideoSample" dest="all"/>
+	<copyField source="keyVideoData" dest="all"/>
+	<copyField source="keyMakeEquip" dest="all"/>
+	<copyField source="keyResolution" dest="all"/>
+	<copyField source="keyLoad" dest="all"/>
+	<copyField source="obtainType" dest="all"/>
+	<copyField source="keyword" dest="all"/>
+	<copyField source="keyType" dest="all"/>
+	<copyField source="originateOrg" dest="all"/>
+	<copyField source="collectionOrg" dest="all"/>
+	<copyField source="collectionArea" dest="all"/>
+	<copyField source="demandNum" dest="all"/>
+	<copyField source="content" dest="all"/>
+	<copyField source="resType" dest="all"/>
+	<copyField source="busSid" dest="all"/>
+	<copyField source="status" dest="all"/>
+	<copyField source="subType" dest="all"/>
+	<copyField source="summary" dest="all"/>
+	<copyField source="chubanze" dest="all"/>
+	<copyField source="chubandi" dest="all"/>
+	<copyField source="isCover" dest="all"/>
+	<copyField source="keyPicModel" dest="all"/>
+	<copyField source="keyPixel" dest="all"/>
+	<copyField source="thumb" dest="all"/>
+	<copyField source="displayName" dest="all"/>
+	<copyField source="size" dest="all"/>
+	<copyField source="pix" dest="all"/>
+	<copyField source="descr" dest="all"/>
+	<copyField source="extName" dest="all"/>
+	<copyField source="texts" dest="all"/>
+	 <uniqueKey>sid</uniqueKey>
+	 <defaultSearchField>all</defaultSearchField>
+	 <solrQueryParser defaultOperator="AND"/>
+  <types>
+   
+    <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+
+    <!-- boolean type: "true" or "false" -->
+    <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+    
+	<fieldType name="text_chinese_JCSEG" class="solr.TextField">
+      <analyzer type="index">
+			<tokenizer class="org.lionsoul.jcseg.solr.JcsegTokenizerFactory" mode="complex"/>
+		 </analyzer>
+		<analyzer type="query">
+			<tokenizer class="org.lionsoul.jcseg.solr.JcsegTokenizerFactory" mode="complex"/>
+		</analyzer>
+	</fieldType>
+
+    <fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="float" class="solr.TrieFloatField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="long" class="solr.TrieLongField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="double" class="solr.TrieDoubleField" precisionStep="0" positionIncrementGap="0"/>
+	<fieldType name="date" class="solr.TrieDateField" precisionStep="0" positionIncrementGap="0"/>
+	
+	<fieldType name="text_word" class="solr.TextField" positionIncrementGap="100">
+      <analyzer>
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>	
+	
+	
+	
+    <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <fieldType name="text_en" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <!-- Case insensitive stop word removal.
+        -->
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.LowerCaseFilterFactory"/>
+	<filter class="solr.EnglishPossessiveFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+	<!-- Optionally you may want to use this less aggressive stemmer instead of PorterStemFilterFactory:
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+	-->
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.LowerCaseFilterFactory"/>
+	<filter class="solr.EnglishPossessiveFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+	<!-- Optionally you may want to use this less aggressive stemmer instead of PorterStemFilterFactory:
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+	-->
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+
+    <fieldType name="text_en_splitting" class="solr.TextField" positionIncrementGap="100" autoGeneratePhraseQueries="true">
+      <analyzer type="index">
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <!-- Case insensitive stop word removal.
+        -->
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" generateNumberParts="1" catenateWords="1" catenateNumbers="1" catenateAll="0" splitOnCaseChange="1"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" generateNumberParts="1" catenateWords="0" catenateNumbers="0" catenateAll="0" splitOnCaseChange="1"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <!-- Less flexible matching, but less false matches.  Probably not ideal for product names,
+         but may be good for SKUs.  Can insert dashes in the wrong place and still match. -->
+    <fieldType name="text_en_splitting_tight" class="solr.TextField" positionIncrementGap="100" autoGeneratePhraseQueries="true">
+      <analyzer>
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="false"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords_en.txt"/>
+        <filter class="solr.WordDelimiterFilterFactory" generateWordParts="0" generateNumberParts="0" catenateWords="1" catenateNumbers="1" catenateAll="0"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+        <!-- this filter can remove any duplicate tokens that appear at the same position - sometimes
+             possible with WordDelimiterFilter in conjuncton with stemming. -->
+        <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <!-- Just like text_general except it reverses the characters of
+	 each token, to enable more efficient leading wildcard queries. -->
+    <fieldType name="text_general_rev" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.ReversedWildcardFilterFactory" withOriginal="true"
+           maxPosAsterisk="3" maxPosQuestion="2" maxFractionAsterisk="0.33"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+ </types>
+  
+  <!-- Similarity is the scoring routine for each document vs. a query.
+       A custom Similarity or SimilarityFactory may be specified here, but 
+       the default is fine for most applications.  
+       For more info: http://wiki.apache.org/solr/SchemaXml#Similarity
+    -->
+  <!--
+     <similarity class="com.example.solr.CustomSimilarityFactory">
+       <str name="paramkey">param value</str>
+     </similarity>
+    -->
+
+</schema>

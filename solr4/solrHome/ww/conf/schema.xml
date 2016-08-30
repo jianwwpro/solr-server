@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema name="example" version="1.5">
+<fields>
+   <field name="_version_" type="long" indexed="true" stored="true" /> 
+   <field name="_root_" type="string" indexed="true" stored="true"/> 
+   <field name="all" type="text_general" indexed="true" stored="true" multiValued="true"/> 
+   <field name="createdDt" type="long" indexed="true" stored="true"/> 
+   <field name="updatedDt" type="long" indexed="true" stored="true"/> 
+   <field name="createdBy" type="string" indexed="true" stored="true"/> 
+   <field name="updatedBy" type="string" indexed="true" stored="true"/> 
+   <field name="sid" type="string" indexed="true" stored="true"  required="true" /> 
+   
+   
+   <field name="code" type="text_word" indexed="true" stored="true"/> 
+   <field name="regNum" type="text_general" indexed="true" stored="true"/> 
+   <field name="origName" type="text_general" indexed="true" stored="true" default=""/> 
+   <field name="relicName" type="text_general" indexed="true" stored="true" default="" /> 
+   <field name="ageType" type="int" indexed="true" stored="true"/> 
+   <field name="ageStr" type="string" indexed="true" stored="true"/> 
+   <field name="age" type="text_general" indexed="true" stored="true"/> 
+   <field name="manuTime" type="text_general" indexed="true" stored="true"/> 
+   <field name="manuAddress" type="text_general" indexed="true" stored="true"/> 
+   <field name="manuAuthor" type="text_general" indexed="true" stored="true"/> 
+   <field name="kgwhlx" type="text_general" indexed="true" stored="true"/> 
+   <field name="tradAmount" type="int" indexed="true" stored="true"/> 
+   <field name="tradAmountUnit" type="text_general" indexed="true" stored="true"/> 
+   <field name="realAmount" type="int" indexed="true" stored="true"/> 
+   <field name="realAmountUnit" type="text_general" indexed="true" stored="true"/> 
+   <field name="size" type="text_general" indexed="true" stored="true"/> 
+   <field name="sizeUnit" type="text_general" indexed="true" stored="true"/> 
+   <field name="quality" type="text_general" indexed="true" stored="true"/> 
+   <field name="qualityUnit" type="text_general" indexed="true" stored="true"/> 
+   <field name="zhidiParent" type="text_word" indexed="true" stored="true"/> 
+   <field name="zhidiSub" type="text_word" indexed="true" stored="true"/> 
+   <field name="zhidi" type="text_word" indexed="true" stored="true" multiValued="true"/>
+   <field name="shape" type="text_general" indexed="true" stored="true"/> 
+   <field name="qixin" type="text_general" indexed="true" stored="true"/> 
+   <field name="color" type="text_general" indexed="true" stored="true"/> 
+   <field name="colorKey" type="text_general" indexed="true" stored="true"/> 
+   <field name="guangze" type="text_general" indexed="true" stored="true"/> 
+   <field name="cxgy" type="text_general" indexed="true" stored="true"/> 
+   <field name="liupai" type="text_general" indexed="true" stored="true"/> 
+   <field name="jifa" type="text_word" indexed="true" stored="true"/> 
+   <field name="ticai" type="text_word" indexed="true" stored="true"/> 
+   <field name="buwei" type="text_general" indexed="true" stored="true"/> 
+   <field name="fuction" type="text_word" indexed="true" stored="true" multiValued="true"/> 
+   <field name="useful" type="text_general" indexed="true" stored="true"/> 
+   <field name="lang" type="text_general" indexed="true" stored="true"/> 
+   <field name="fontType" type="text_general" indexed="true" stored="true"/> 
+   <field name="fontFaction" type="text_general" indexed="true" stored="true"/> 
+   <field name="fontColor" type="text_general" indexed="true" stored="true"/> 
+   <field name="relicLevel" type="string" indexed="true" stored="true"/> 
+   <field name="brokenLevel" type="text_general" indexed="true" stored="true"/> 
+   <field name="brokenFeature" type="text_general" indexed="true" stored="true"/> 
+   <field name="presStatus" type="text_general" indexed="true" stored="true"/> 
+   <field name="storStatus" type="text_general" indexed="true" stored="true"/> 
+   <field name="typename" type="text_general" indexed="true" stored="true"/> 
+   <field name="typeKey" type="text_general" indexed="true" stored="true"/> 
+   <field name="manuAuthorBiography" type="text_general" indexed="true" stored="true"/> 
+   <field name="minwen" type="text_general" indexed="true" stored="true"/> 
+   <field name="kuanshi" type="text_general" indexed="true" stored="true"/> 
+   <field name="tiba" type="text_word" indexed="true" stored="true"/> 
+   <field name="timin" type="text_general" indexed="true" stored="true"/> 
+   <field name="yinjian" type="text_general" indexed="true" stored="true"/> 
+   <field name="timinSummary" type="text_general" indexed="true" stored="true"/> 
+   <field name="content" type="text_general" indexed="true" stored="true"/> 
+   <field name="shapeFeature" type="text_general" indexed="true" stored="true"/> 
+   <field name="colDate" type="long" indexed="true" stored="true"/> 
+   <field name="srcType" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcDontDate" type="long" indexed="true" stored="true"/> 
+   <field name="srcDontPerson" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcDontReceiver" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcColDate" type="long" indexed="true" stored="true"/> 
+   <field name="srcColAddress" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcColPerson" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcColPrice" type="float" indexed="true" stored="true"/> 
+   <field name="srcColRecevier" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcBojiaoDate" type="long" indexed="true" stored="true"/> 
+   <field name="srcBojiaoPerson" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcBojiaoCompany" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcBojiaoReceiver" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcBojiaoDesc" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcMakeDate" type="long" indexed="true" stored="true"/> 
+   <field name="srcMakeType" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcMakePerson" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcMakePrice" type="float" indexed="true" stored="true"/> 
+   <field name="srcMakeReceiver" type="text_general" indexed="true" stored="true"/> 
+   <field name="srcOther" type="text_general" indexed="true" stored="true"/> 
+   <field name="unearthedDate" type="long" indexed="true" stored="true"/> 
+   <field name="unearthedAddress" type="text_general" indexed="true" stored="true"/> 
+   <field name="unearthedLeader" type="text_general" indexed="true" stored="true"/> 
+   <field name="unearthedComany" type="text_general" indexed="true" stored="true"/> 
+   <field name="unearthedApprover" type="text_general" indexed="true" stored="true"/> 
+   <field name="unearthedPublish" type="text_general" indexed="true" stored="true"/> 
+   <field name="unearthedPublishDate" type="long" indexed="true" stored="true"/> 
+   <field name="unearthedStatus" type="text_general" indexed="true" stored="true"/> 
+   <field name="unearthedDesc" type="text_general" indexed="true" stored="true"/> 
+   <field name="permision" type="text_general" indexed="true" stored="true"/> 
+   <field name="status" type="int" indexed="true" stored="true"/> 
+   <field name="isJinglt" type="text_general" indexed="true" stored="true"/> 
+   <field name="is3d" type="text_general" indexed="true" stored="true"/> 
+    <field name="thumbPath" type="string" indexed="true" stored="true" default=""/> 
+	<field name="repairCount" type="long" indexed="true" stored="true" default="0"/>
+	<field name="kufang" type="string" indexed="true" stored="true" default=""/>
+   <field name="exhibitStatus" type="string" indexed="true" stored="true" default="" />
+   <field name="niandai" type="text_word" indexed="true" stored="true" default="" />
+   
+</fields>
+ 
+ <copyField source="code" dest="all"/>
+ <copyField source="regNum" dest="all"/>
+ <copyField source="origName" dest="all"/>
+ <copyField source="relicName" dest="all"/>
+ <copyField source="ageType" dest="all"/>
+ <copyField source="age" dest="all"/>
+ <copyField source="manuTime" dest="all"/>
+ <copyField source="manuAddress" dest="all"/>
+ <copyField source="manuAuthor" dest="all"/>
+ <copyField source="kgwhlx" dest="all"/>
+ <copyField source="tradAmount" dest="all"/>
+ <copyField source="tradAmountUnit" dest="all"/>
+ <copyField source="realAmount" dest="all"/>
+ <copyField source="realAmountUnit" dest="all"/>
+ <copyField source="size" dest="all"/>
+ <copyField source="sizeUnit" dest="all"/>
+ <copyField source="quality" dest="all"/>
+ <copyField source="qualityUnit" dest="all"/>
+ <copyField source="zhidiParent" dest="all"/>
+ <copyField source="zhidiSub" dest="all"/>
+ <copyField source="zhidi" dest="all"/>
+ <copyField source="shape" dest="all"/>
+ <copyField source="qixin" dest="all"/>
+ <copyField source="color" dest="all"/>
+ <copyField source="colorKey" dest="all"/>
+ <copyField source="guangze" dest="all"/>
+ <copyField source="cxgy" dest="all"/>
+ <copyField source="liupai" dest="all"/>
+ <copyField source="jifa" dest="all"/>
+ <copyField source="ticai" dest="all"/>
+ <copyField source="buwei" dest="all"/>
+ <copyField source="useful" dest="all"/>
+ <copyField source="lang" dest="all"/>
+ <copyField source="fontType" dest="all"/>
+ <copyField source="fontFaction" dest="all"/>
+ <copyField source="fontColor" dest="all"/>
+ <copyField source="relicLevel" dest="all"/>
+ <copyField source="brokenLevel" dest="all"/>
+ <copyField source="brokenFeature" dest="all"/>
+ <copyField source="presStatus" dest="all"/>
+ <copyField source="storStatus" dest="all"/>
+ <copyField source="typename" dest="all"/>
+ <copyField source="typeKey" dest="all"/>
+ <copyField source="manuAuthorBiography" dest="all"/>
+ <copyField source="minwen" dest="all"/>
+ <copyField source="kuanshi" dest="all"/>
+ <copyField source="tiba" dest="all"/>
+ <copyField source="timin" dest="all"/>
+ <copyField source="yinjian" dest="all"/>
+ <copyField source="timinSummary" dest="all"/>
+ <copyField source="content" dest="all"/>
+ <copyField source="shapeFeature" dest="all"/>
+ <copyField source="colDate" dest="all"/>
+ <copyField source="srcDontDate" dest="all"/>
+ <copyField source="srcDontPerson" dest="all"/>
+ <copyField source="srcDontReceiver" dest="all"/>
+ <copyField source="srcColDate" dest="all"/>
+ <copyField source="srcColAddress" dest="all"/>
+ <copyField source="srcColPerson" dest="all"/>
+ <copyField source="srcColPrice" dest="all"/>
+ <copyField source="srcColRecevier" dest="all"/>
+ <copyField source="srcBojiaoDate" dest="all"/>
+ <copyField source="srcBojiaoPerson" dest="all"/>
+ <copyField source="srcBojiaoCompany" dest="all"/>
+ <copyField source="srcBojiaoReceiver" dest="all"/>
+ <copyField source="srcBojiaoDesc" dest="all"/>
+ <copyField source="srcMakeDate" dest="all"/>
+ <copyField source="srcMakeType" dest="all"/>
+ <copyField source="srcMakePerson" dest="all"/>
+ <copyField source="srcMakePrice" dest="all"/>
+ <copyField source="srcMakeReceiver" dest="all"/>
+ <copyField source="srcOther" dest="all"/>
+ <copyField source="unearthedDate" dest="all"/>
+ <copyField source="unearthedAddress" dest="all"/>
+ <copyField source="unearthedLeader" dest="all"/>
+ <copyField source="unearthedComany" dest="all"/>
+ <copyField source="unearthedApprover" dest="all"/>
+ <copyField source="unearthedPublish" dest="all"/>
+ <copyField source="unearthedPublishDate" dest="all"/>
+ <copyField source="unearthedStatus" dest="all"/>
+ <copyField source="unearthedDesc" dest="all"/>
+ <copyField source="permision" dest="all"/>
+ <copyField source="status" dest="all"/>
+ <copyField source="isJinglt" dest="all"/>
+ <copyField source="is3d" dest="all"/>
+
+
+ <uniqueKey>sid</uniqueKey>
+ <defaultSearchField>all</defaultSearchField>
+ <solrQueryParser defaultOperator="AND"/>
+
+ 
+
+  <types>
+   
+    <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+
+    <!-- boolean type: "true" or "false" -->
+    <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+    
+	<fieldType name="text_chinese_JCSEG" class="solr.TextField">
+      <analyzer type="index">
+			<tokenizer class="org.lionsoul.jcseg.solr.JcsegTokenizerFactory" mode="complex"/>
+		 </analyzer>
+		<analyzer type="query">
+			<tokenizer class="org.lionsoul.jcseg.solr.JcsegTokenizerFactory" mode="complex"/>
+		</analyzer>
+	</fieldType>
+
+    <fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="float" class="solr.TrieFloatField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="long" class="solr.TrieLongField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="double" class="solr.TrieDoubleField" precisionStep="0" positionIncrementGap="0"/>
+	<fieldType name="date" class="solr.TrieDateField" precisionStep="0" positionIncrementGap="0"/>
+	
+	<fieldType name="text_word" class="solr.TextField" positionIncrementGap="100">
+      <analyzer>
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>	
+	
+	
+	
+    <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <fieldType name="text_en" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <!-- Case insensitive stop word removal.
+        -->
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.LowerCaseFilterFactory"/>
+	<filter class="solr.EnglishPossessiveFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+	<!-- Optionally you may want to use this less aggressive stemmer instead of PorterStemFilterFactory:
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+	-->
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.LowerCaseFilterFactory"/>
+	<filter class="solr.EnglishPossessiveFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+	<!-- Optionally you may want to use this less aggressive stemmer instead of PorterStemFilterFactory:
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+	-->
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+
+    <fieldType name="text_en_splitting" class="solr.TextField" positionIncrementGap="100" autoGeneratePhraseQueries="true">
+      <analyzer type="index">
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <!-- Case insensitive stop word removal.
+        -->
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" generateNumberParts="1" catenateWords="1" catenateNumbers="1" catenateAll="0" splitOnCaseChange="1"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" generateNumberParts="1" catenateWords="0" catenateNumbers="0" catenateAll="0" splitOnCaseChange="1"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <!-- Less flexible matching, but less false matches.  Probably not ideal for product names,
+         but may be good for SKUs.  Can insert dashes in the wrong place and still match. -->
+    <fieldType name="text_en_splitting_tight" class="solr.TextField" positionIncrementGap="100" autoGeneratePhraseQueries="true">
+      <analyzer>
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="false"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords_en.txt"/>
+        <filter class="solr.WordDelimiterFilterFactory" generateWordParts="0" generateNumberParts="0" catenateWords="1" catenateNumbers="1" catenateAll="0"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+        <!-- this filter can remove any duplicate tokens that appear at the same position - sometimes
+             possible with WordDelimiterFilter in conjuncton with stemming. -->
+        <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <!-- Just like text_general except it reverses the characters of
+	 each token, to enable more efficient leading wildcard queries. -->
+    <fieldType name="text_general_rev" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.ReversedWildcardFilterFactory" withOriginal="true"
+           maxPosAsterisk="3" maxPosQuestion="2" maxFractionAsterisk="0.33"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+ </types>
+  
+  <!-- Similarity is the scoring routine for each document vs. a query.
+       A custom Similarity or SimilarityFactory may be specified here, but 
+       the default is fine for most applications.  
+       For more info: http://wiki.apache.org/solr/SchemaXml#Similarity
+    -->
+  <!--
+     <similarity class="com.example.solr.CustomSimilarityFactory">
+       <str name="paramkey">param value</str>
+     </similarity>
+    -->
+
+</schema>

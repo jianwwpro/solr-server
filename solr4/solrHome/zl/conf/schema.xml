@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema name="example" version="1.5">
+<fields>
+   <field name="_version_" type="long" indexed="true" stored="true" /> 
+   <field name="_root_" type="string" indexed="true" stored="true"/> 
+   <field name="all" type="text_general" indexed="true" stored="true" multiValued="true"/> 
+   <field name="createdDt" type="long" indexed="true" stored="true"/> 
+   <field name="updatedDt" type="long" indexed="true" stored="true"/> 
+   <field name="createdBy" type="string" indexed="true" stored="true"/> 
+   <field name="updatedBy" type="string" indexed="true" stored="true"/> 
+   <field name="sid" type="string" indexed="true" stored="true"  required="true" /> 
+   
+   
+   <field name="code" type="text_general" indexed="true" stored="true"/> 
+   <field name="exhibitUri" type="text_general" indexed="true" stored="true"/> 
+   <field name="exhibitCode" type="text_general" indexed="true" stored="true"/> 
+   <field name="name" type="text_general" indexed="true" stored="true" default="" /> 
+   <field name="parName" type="text_general" indexed="true" stored="true"/> 
+   <field name="otherName" type="text_general" indexed="true" stored="true"/> 
+   <field name="respPerson" type="text_general" indexed="true" stored="true"/> 
+   <field name="respType" type="text_general" indexed="true" stored="true"/> 
+   <field name="respPlan" type="text_general" indexed="true" stored="true"/> 
+   <field name="respOrg" type="text_general" indexed="true" stored="true"/> 
+   <field name="respZhuban" type="text_general" indexed="true" stored="true"/> 
+   <field name="respChengban" type="text_general" indexed="true" stored="true"/> 
+   <field name="respXieban" type="text_general" indexed="true" stored="true"/> 
+   <field name="respSpon" type="text_general" indexed="true" stored="true"/> 
+   <field name="respExh" type="text_word" indexed="true" stored="true"/> 
+   <field name="respCon" type="text_general" indexed="true" stored="true"/> 
+   <field name="respDesign" type="text_general" indexed="true" stored="true"/> 
+   <field name="manDate" type="text_general" indexed="true" stored="true"/> 
+   <field name="exhDate" type="long" indexed="true" stored="true"/> 
+   <field name="uexhDate" type="long" indexed="true" stored="true"/> 
+   <field name="startDate" type="long" indexed="true" stored="true" default="0"/> 
+   <field name="endDate" type="long" indexed="true" stored="true" default="0"/> 
+   <field name="exhibitArea" type="text_word" indexed="true" stored="true"/> 
+   <field name="exhibitPlace" type="text_general" indexed="true" stored="true"/> 
+   <field name="exhibitResCount" type="int" indexed="true" stored="true"/> 
+   <field name="exhibitSize" type="text_general" indexed="true" stored="true"/> 
+   <field name="reward" type="text_general" indexed="true" stored="true"/> 
+   <field name="note" type="text_general" indexed="true" stored="true"/> 
+   <field name="lang" type="text_general" indexed="true" stored="true"/> 
+   <field name="keyWord" type="text_general" indexed="true" stored="true"/> 
+   <field name="liebie" type="text_word" indexed="true" stored="true"/> 
+   <field name="drumWay" type="text_general" indexed="true" stored="true"/> 
+   <field name="opening" type="text_general" indexed="true" stored="true"/> 
+   <field name="fundSrc" type="text_general" indexed="true" stored="true"/> 
+   <field name="fundAmount" type="int" indexed="true" stored="true"/> 
+   <field name="budgetFindAccounts" type="text_general" indexed="true" stored="true"/> 
+   <field name="construction" type="text_general" indexed="true" stored="true"/> 
+   <field name="bidWay" type="text_general" indexed="true" stored="true"/> 
+   <field name="planCase" type="text_general" indexed="true" stored="true"/> 
+   <field name="designCase" type="text_general" indexed="true" stored="true"/> 
+   <field name="exhSight" type="text_general" indexed="true" stored="true"/> 
+   <field name="permision" type="text_general" indexed="true" stored="true"/> 
+   <field name="type" type="text_word" indexed="true" stored="true"/> 
+   <field name="status" type="int" indexed="true" stored="true" default="0"/> 
+   <field name="exhibitSignNo" type="text_general" indexed="true" stored="true" default=""/> 
+   <field name="exhibitSignOff" type="text_general" indexed="true" stored="true"/> 
+   <field name="exhibitors" type="text_general" indexed="true" stored="true"/> 
+   <field name="exhManage" type="text_general" indexed="true" stored="true"/> 
+   <field name="exhEquip" type="text_general" indexed="true" stored="true"/> 
+   <field name="attachment" type="text_general" indexed="true" stored="true"/> 
+    <field name="thumbPath" type="string" indexed="true" stored="true" default=""/> 
+  
+</fields>
+
+<copyField source="code" dest="all"/>
+<copyField source="exhibitUri" dest="all"/>
+<copyField source="exhibitCode" dest="all"/>
+<copyField source="name" dest="all"/>
+<copyField source="parName" dest="all"/>
+<copyField source="otherName" dest="all"/>
+<copyField source="respPerson" dest="all"/>
+<copyField source="respType" dest="all"/>
+<copyField source="respPlan" dest="all"/>
+<copyField source="respOrg" dest="all"/>
+<copyField source="respZhuban" dest="all"/>
+<copyField source="respChengban" dest="all"/>
+<copyField source="respXieban" dest="all"/>
+<copyField source="respSpon" dest="all"/>
+<copyField source="respExh" dest="all"/>
+<copyField source="respCon" dest="all"/>
+<copyField source="respDesign" dest="all"/>
+<copyField source="manDate" dest="all"/>
+<copyField source="exhDate" dest="all"/>
+<copyField source="uexhDate" dest="all"/>
+<copyField source="startDate" dest="all"/>
+<copyField source="endDate" dest="all"/>
+<copyField source="exhibitArea" dest="all"/>
+<copyField source="exhibitPlace" dest="all"/>
+<copyField source="exhibitResCount" dest="all"/>
+<copyField source="exhibitSize" dest="all"/>
+<copyField source="reward" dest="all"/>
+<copyField source="note" dest="all"/>
+<copyField source="lang" dest="all"/>
+<copyField source="keyWord" dest="all"/>
+<copyField source="liebie" dest="all"/>
+<copyField source="drumWay" dest="all"/>
+<copyField source="opening" dest="all"/>
+<copyField source="fundSrc" dest="all"/>
+<copyField source="fundAmount" dest="all"/>
+<copyField source="budgetFindAccounts" dest="all"/>
+<copyField source="construction" dest="all"/>
+<copyField source="bidWay" dest="all"/>
+<copyField source="planCase" dest="all"/>
+<copyField source="designCase" dest="all"/>
+<copyField source="exhSight" dest="all"/>
+<copyField source="permision" dest="all"/>
+<copyField source="type" dest="all"/>
+<copyField source="status" dest="all"/>
+<copyField source="exhibitSignNo" dest="all"/>
+<copyField source="exhibitSignOff" dest="all"/>
+<copyField source="exhibitors" dest="all"/>
+<copyField source="exhManage" dest="all"/>
+<copyField source="exhEquip" dest="all"/>
+<copyField source="attachment" dest="all"/>
+
+
+ <uniqueKey>sid</uniqueKey>
+ <defaultSearchField>all</defaultSearchField>
+ <solrQueryParser defaultOperator="AND"/>
+
+ 
+
+  <types>
+   
+    <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+
+    <!-- boolean type: "true" or "false" -->
+    <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+    
+	<fieldType name="text_chinese_JCSEG" class="solr.TextField">
+      <analyzer type="index">
+			<tokenizer class="org.lionsoul.jcseg.solr.JcsegTokenizerFactory" mode="complex"/>
+		 </analyzer>
+		<analyzer type="query">
+			<tokenizer class="org.lionsoul.jcseg.solr.JcsegTokenizerFactory" mode="complex"/>
+		</analyzer>
+	</fieldType>
+
+    <fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="float" class="solr.TrieFloatField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="long" class="solr.TrieLongField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="double" class="solr.TrieDoubleField" precisionStep="0" positionIncrementGap="0"/>
+	<fieldType name="date" class="solr.TrieDateField" precisionStep="0" positionIncrementGap="0"/>
+	
+	<fieldType name="text_word" class="solr.TextField" positionIncrementGap="100">
+      <analyzer>
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>	
+	
+	
+	
+    <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <fieldType name="text_en" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <!-- Case insensitive stop word removal.
+        -->
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.LowerCaseFilterFactory"/>
+	<filter class="solr.EnglishPossessiveFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+	<!-- Optionally you may want to use this less aggressive stemmer instead of PorterStemFilterFactory:
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+	-->
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.LowerCaseFilterFactory"/>
+	<filter class="solr.EnglishPossessiveFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+	<!-- Optionally you may want to use this less aggressive stemmer instead of PorterStemFilterFactory:
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+	-->
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+
+    <fieldType name="text_en_splitting" class="solr.TextField" positionIncrementGap="100" autoGeneratePhraseQueries="true">
+      <analyzer type="index">
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <!-- Case insensitive stop word removal.
+        -->
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" generateNumberParts="1" catenateWords="1" catenateNumbers="1" catenateAll="0" splitOnCaseChange="1"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory"
+                ignoreCase="true"
+                words="stopwords_en.txt"
+                />
+        <filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" generateNumberParts="1" catenateWords="0" catenateNumbers="0" catenateAll="0" splitOnCaseChange="1"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+        <filter class="solr.PorterStemFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <!-- Less flexible matching, but less false matches.  Probably not ideal for product names,
+         but may be good for SKUs.  Can insert dashes in the wrong place and still match. -->
+    <fieldType name="text_en_splitting_tight" class="solr.TextField" positionIncrementGap="100" autoGeneratePhraseQueries="true">
+      <analyzer>
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="false"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords_en.txt"/>
+        <filter class="solr.WordDelimiterFilterFactory" generateWordParts="0" generateNumberParts="0" catenateWords="1" catenateNumbers="1" catenateAll="0"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+        <!-- this filter can remove any duplicate tokens that appear at the same position - sometimes
+             possible with WordDelimiterFilter in conjuncton with stemming. -->
+        <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <!-- Just like text_general except it reverses the characters of
+	 each token, to enable more efficient leading wildcard queries. -->
+    <fieldType name="text_general_rev" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.ReversedWildcardFilterFactory" withOriginal="true"
+           maxPosAsterisk="3" maxPosQuestion="2" maxFractionAsterisk="0.33"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+ </types>
+  
+  <!-- Similarity is the scoring routine for each document vs. a query.
+       A custom Similarity or SimilarityFactory may be specified here, but 
+       the default is fine for most applications.  
+       For more info: http://wiki.apache.org/solr/SchemaXml#Similarity
+    -->
+  <!--
+     <similarity class="com.example.solr.CustomSimilarityFactory">
+       <str name="paramkey">param value</str>
+     </similarity>
+    -->
+
+</schema>
